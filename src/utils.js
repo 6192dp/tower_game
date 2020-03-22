@@ -139,6 +139,7 @@ export const addFailedCount = (engine) => {
     engine.pauseAudio('bgm')
     engine.playAudio('game-over')
     engine.setVariable(constant.gameStartNow, false)
+    console.log(`Game has ended`)
   }
 }
 

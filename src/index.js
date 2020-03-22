@@ -98,18 +98,19 @@ window.TowerGame = (option = {}) => {
   }
 
   game.start = () => {
-    const tutorial = new Instance({
-      name: 'tutorial',
-      action: tutorialAction,
-      painter: tutorialPainter
-    })
-    game.addInstance(tutorial)
-    const tutorialArrow = new Instance({
-      name: 'tutorial-arrow',
-      action: tutorialAction,
-      painter: tutorialPainter
-    })
-    game.addInstance(tutorialArrow)
+    
+    // const tutorial = new Instance({
+    //   name: 'tutorial',
+    //   action: tutorialAction,
+    //   painter: tutorialPainter
+    // })
+    // game.addInstance(tutorial)
+    // const tutorialArrow = new Instance({
+    //   name: 'tutorial-arrow',
+    //   action: tutorialAction,
+    //   painter: tutorialPainter
+    // })
+    // game.addInstance(tutorialArrow)
     game.setTimeMovement(constant.bgInitMovement, 500)
     game.setTimeMovement(constant.tutorialMovement, 500)
     game.setVariable(constant.gameStartNow, true)
