@@ -56,7 +56,7 @@ export const endAnimate = (engine) => {
   const heartHeight = heart.height
   const zoomedHeartWidth = engine.width * 0.08
   const zoomedHeartHeight = (heartHeight * zoomedHeartWidth) / heartWidth
-  for (let i = 1; i <= 3; i += 1) {
+  for (let i = 1; i <= 5; i += 1) {
     ctx.save()
     if (i <= failedCount) {
       ctx.globalAlpha = 0.2
