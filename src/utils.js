@@ -163,10 +163,6 @@ export const addScore = (engine, isPerfect) => {
     perfect > 0
       ? lastGameScore + (50 || successScore) + 10 * (perfect - 1)
       : lastGameScore + (25 || successScore);
-
-  console.log("successScore: " + successScore);
-  console.log("perfectScore: " + perfectScore);
-  console.log("perfect: " + perfect);
   engine.setVariable(constant.gameScore, score);
   engine.setVariable(constant.perfectCount, perfect);
   if (setGameScore) setGameScore(score);
